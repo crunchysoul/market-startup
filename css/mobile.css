@@ -1,0 +1,322 @@
+@media only screen and (min-width: 320px) and (max-width : 480px) {
+    body {
+      font-family: 'Soucre Sans Pro', sans-serif;
+      text-align: center;
+    }
+  
+    /* navigation */
+    nav {
+      width: 100%;
+      position: fixed;
+      top: 0;
+    } 
+    nav ul {
+      list-style: none;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  
+    section {
+      color: #FFFFFF;
+      font-size: 36px;
+      font-weight: bold;
+      z-index: -100;
+    }
+  
+    span1 {
+      color: #2e74b7;
+    }
+  
+    /* page heading */
+    span2 {
+      color: #FFFFFF;
+      font-size: 1.5em;
+    }
+  
+    span3 {
+      color: #a9b7cb;
+      font-size: 1.2em;
+    }
+    span4 {
+      color: #181d2a;
+      font-size: 1em;
+    }
+    span5 {
+      color: #181d2a;
+      font-size: 1.5em;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+    }
+  
+    h4 {
+      color: #181d2a;
+      font-size: 1.5em;
+    }
+  
+    section#section-1 {
+      background: #2e74b7;
+    }
+    section#section-2 {
+      background: #2e74b7;
+      font-size: 1em;
+    }
+    section#section-31 {
+      background: #FFFFFF;
+      color: #181d2a;
+      font-size: 1em;
+    }
+    section#section-32 {
+      background: #FFFFFF;
+      color: #181d2a;
+      font-size: 1em;
+    }
+    section#section-4 {
+      background: #262626;
+    }
+    section#section-5 {
+      background: #000000;
+      color: #FFFFFF;
+      font-size: 1em;
+    }
+  
+    .page1 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 13em;
+      font-size: 0.65em;
+    }
+  
+    .page2 {
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 500px;
+      font-weight: normal;
+      font-size: calc(0.75em + 1vmin);
+      padding: 35px;   
+    }
+  
+    .page31 {
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 500px;
+      font-weight: normal;
+      font-size: calc(0.75em + 1vmin);
+      padding: 35px; 
+    }
+  
+    .page32 {
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 500px;
+      font-weight: normal;
+      font-size: calc(0.75em + 1vmin);
+      padding: 35px; 
+    }
+  
+    .page4 {
+      padding: 100px;
+    }
+  
+    /* page 5 Glowing Icons*/
+    #section-4 ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    #section-4 ul li {
+      list-style: none;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+    #section-4 ul li a {
+      position: relative;
+      display: block;
+      width: 65px;
+      height: 65px;
+      text-align: center;
+      line-height: 65px;
+      background: #000000;
+      border-radius: 50%;
+      font-size: 48px;
+      color: white;
+      transition: .5s;
+    }
+    #section-4 ul li a:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #ffee10;
+      transition: .5s;
+      transform: scale(0.9);
+      z-index: -1;
+    }
+    #section-4 u li a:hover:before {
+      transform: scale(1.1);
+      box-shadow: 0 0 9px #ffee10;
+    }
+    #section-4 ul li a:hover {
+      color: #ffee10;
+      box-shadow: 0 0 27.5px #ffee10;
+      text-shadow: 0 0 27.5px #ffee10;
+    }
+  
+    #section-5 ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    #section-5 ul li {
+      list-style: none;
+      margin: 0 5px;
+    }
+    #section-5 ul li a {
+      position: relative;
+      display: block;
+      text-align: center;
+      font-size: 17.5px;
+      color: white;
+    }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  /* page 6 Contact Form */
+  #section-5 body {
+    font-family: 'Lato', sans-serif;
+    background: #000000;
+    color: #b3aca7;
+    }
+    
+    header {
+        position: relative;
+        margin: 25px 0 12.5px 0;
+        font-size: 1.5em; 
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    
+    #form {
+        position: relative;
+        width: 300px;
+        margin: 25px auto 50px auto;
+    }
+    
+    input {
+        font-family: 'Lato', sans-serif;
+        font-size: 1em; 
+        width: 240px;
+        height: 43px;
+        padding: 0px 15px 0px 15px;
+        
+        background: transparent;
+        outline: none;
+        color: #a9b7cb;
+        
+        border: solid 1px #b3aca7;
+        border-bottom: none;
+        
+        transition: 0.3s;
+    }
+    
+    input:hover {
+        background: #a9b7cb;
+        color: #e2dedb;
+    }
+    
+    textarea {
+        width: 240px;
+        max-width: 280px;
+        height: 200px;
+        max-height: 350px;
+        padding: 15px;
+        
+        background: transparent;
+        outline: none;
+        
+        color: #a9b7cb;
+        font-family: 'Lato', sans-serif;
+        font-size: 1em; 
+        
+        border: solid 1px #b3aca7;
+        
+        transition: 0.3s;
+    }
+    
+    textarea:hover {
+        background: #a9b7cb;
+        color: #e2dedb;
+    }
+    
+    #submit {
+        width: 272px;
+        max-width: 280px;
+        padding: 0;
+        margin: -5px 0px 0px 0px;
+        
+        font-family: 'Lato', sans-serif;
+        font-size: 1em; 
+        color: #efd604;
+        
+        outline:none;
+        cursor: pointer;
+        
+        border: solid 1px #b3aca7;
+        border-top: none;
+    }  
+    #submit:hover {
+        color: #2e74b7;
+        font-weight: bold;
+    }
+  }
+  
+  /* 1st page CG logo */
+  .logo-1 img {
+    width: 500px;
+    /* height: 180px; */
+    position: center;
+  }
+  /* 5th page black-back-ground image */
+  .background-image img{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  /* 4th page download-image */
+  #download-image {
+      background: url("img/black_download_icon.png");
+      height: 5em;
+      width: 2em;
+  }
+  

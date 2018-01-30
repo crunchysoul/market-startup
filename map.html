@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+		<script src="./datamaps.world.min.js"></script>
+		<title>世界分级统计地图</title>
+		<style>::-webkit-scrollbar{display:none;}html,body{overflow:hidden;height:100%;}</style>
+	</head>
+	<body>
+		<div id="container" style="position: relative; width: 100vw; height: 100vh;"></div>
+		<script>
+			var map = new Datamap({element: document.getElementById('container')});
+		</script>
+	</body>
+</html>
