@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Market Agency</title>
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<!-- main CSS -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<!-- mobile CSS -->
@@ -63,16 +65,16 @@
 						</li>
 						<li>
 							<div>
-								<img src="./img/hex_pic_00.jpg" alt=""/>
-								<h1>Your Business</h1
+								<img src="./img/hex_shanghai.jpg" alt=""/>
+								<h1>Your Business</h1>
 								<p>Anywhere in the World</p>
 							</div>
 						</li>
 						<li>
 							<div>
-								<img src="./img/hex_pic_01.jpg" alt=""/>
-								<h1>This is a title</h1>
-								<p>Some sample text about the article this hexagon leads to</p>
+								<img src="./img/hex_mxc.jpeg" alt=""/>
+								<h1>Your Business</h1>
+								<p>Anywhere in the World</p>
 							</div>
 						</li>
 						<li>
@@ -84,24 +86,24 @@
 						</li>
 						<li>
 							<div>
-								<img src="./img/hex_pic_02.jpg" alt=""/>
-								<h1>This is a title</h1>
-								<p>Some sample text about the article this hexagon leads to</p>
+								<img src="./img/hex_nyc.jpeg" alt=""/>
+								<h1>Your Business</h1>
+								<p>Anywhere in the World</p>
 							</div>
 						</li>
 						<li class="pusher"></li>
 						<li>
 							<div>
-								<img src="./img/hex_pic_03.jpg" alt=""/>
-								<h1>This is a title</h1>
-								<p>Some sample text about the article this hexagon leads to</p>
+								<img src="./img/hex_tky.jpg" alt=""/>
+								<h1>Your Business</h1>
+								<p>Anywhere in the World</p>
 							</div>
 						</li>
 						<li>
 							<div>
 								<img src="./img/hex_pic_04.jpg" alt=""/>
-								<h1>This is a title</h1>
-								<p>Some sample text about the article this hexagon leads to</p>
+								<h1>Your Business</h1>
+								<p>Anywhere in the World</p>
 							</div>
 						</li>
 					</ul>
@@ -116,23 +118,31 @@
 						var map = new Datamap({
 							element: document.getElementById('container'),
 							fills: {
-								defaultFill: "#2F0A28",
+								defaultFill: "#F8F0FB",
+								hasSuceed: "grey",
+								others: "#F8F0FB"
 							},
 							geographyConfig: {
 								dataUrl: null, //if not null, datamaps will fetch the map JSON (currently only supports topojson)
 								hideAntarctica: true,
 								borderWidth: 1,
 								borderOpacity: 1,
-								borderColor: 'purple',
+								borderColor: "grey",
 								popupTemplate: function(geography, data) { //this function should just return a string
 									return '<div class="hoverinfo" id="foo"><strong>' + geography.properties.name + '</strong></div>';
 								},
 								popupOnHover: true, //disable the popup while hovering
 								highlightOnHover: true,
-								highlightFillColor: 'grey',
+								popupFillColor: 'red',
+								highlightFillColor: '#F8F0FB',
 								highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
-								highlightBorderWidth: 2,
+								highlightBorderWidth: 1,
 								highlightBorderOpacity: 1
+							},
+							data: {
+								MEX: { fillKey: "hasSuceed", highlightBorderWidth: "10", highlightFillColor:"hasSuceed"},
+								CHN: { fillKey: "hasSuceed", highlightBorderWidth: "10", highlightFillColor:"hasSuceed"},
+								AUS: { fillKey: "hasSuceed", highlightBorderWidth: "10", highlightFillColor:"hasSuceed"},
 							},
 						});
 					</script>
@@ -142,41 +152,87 @@
 			<!-- page 3.2 -->
 			<section class="section" id="section-32">
 				<div class="page32">
-					<h3>Experience</h3>
+					<h3>About</h3>
 				</div>      
 			</section>
+
 			<!-- page 4 -->
 			<section class="section" id="section-4">
+				<div class="page4">
+					<h3>Capabilities</h3>
+				</div>      
 			</section>
+
 			<!-- page 5 -->
 			<section class="section" id="section-5">
-				<header><span1>Let's keep in touch</span1></header>
-				<form name="contact" id="form" action="thank-you" netlify>            
-					<input id="name" type="text" placeholder="name">
-					<input id="email" type="text" placeholder="e-mail">
-					<textarea id="message" type="text" placeholder="message"></textarea>
-					<input id="submit" type="submit" value="SEND">          
-				</form>
-			</section> 
-			<!-- page 5 -->
-			<section class="section" id="section-5">
-				<header><span1>Let's keep in touch</span1></header>
-				<form name="contact" id="form" action="thank-you" netlify>            
-					<input id="name" type="text" placeholder="name">
-					<input id="email" type="text" placeholder="e-mail">
-					<textarea id="message" type="text" placeholder="message"></textarea>
-					<input id="submit" type="submit" value="SEND">          
-				</form>
-			</section> 
-			<section class="section" id="section-5">
-				<header><span1>Let's keep in touch</span1></header>
-				<form name="contact" id="form" action="thank-you" netlify>            
-					<input id="name" type="text" placeholder="name">
-					<input id="email" type="text" placeholder="e-mail">
-					<textarea id="message" type="text" placeholder="message"></textarea>
-					<input id="submit" type="submit" value="SEND">          
-				</form>
+
+				<div class="container">
+					<div class="card-deck mb-3 text-center">
+						<div class="card mb-4 box-shadow">
+							<div class="card-header">
+								<h2 class="my-0 font-weight-normal">Creative</h2>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title pricing-card-title"><small class="text-muted">Get a quote</small></h4>
+								<ul class="list-unstyled mt-3 mb-4 text-left">
+									<li class="text-center">Everything you'll need for your website and media content</li>
+									<br>
+									<li><i class="fa fa-check" aria-hidden="true"></i> Pick between different website styles</li>
+									<li><i class="fa fa-check" aria-hidden="true"></i> Logo and image creation</li>
+									<li><i class="fa fa-check" aria-hidden="true"></i> Translations to Mandarin, Spanish, and more</li>
+								</ul>
+								<button type="button" class="btn btn-lg btn-block btn-outline-info">Contact us</button>
+							</div>
+						</div>
+						<div class="card mb-4 box-shadow">
+							<div class="card-header">
+								<h2 class="my-0 font-weight-normal">Strategy</h2>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title pricing-card-title"><small class="text-muted">Get a quote</small></h4>
+								<ul class="list-unstyled mt-3 mb-4 text-left">
+									<li class="text-center">All your creative and analytic needs in one package</li>
+									<br>
+									<li><i class="fa fa-check" aria-hidden="true"></i> Marketing analytics</li>
+									<li><i class="fa fa-check" aria-hidden="true"></i> SEO follow-up</li>
+									<li><i class="fa fa-check" aria-hidden="true"></i> Social Media optimization</li>
+									<li><i class="fa fa-check" aria-hidden="true"></i> Strategy development</li>
+								</ul>
+								<button type="button" class="btn btn-lg btn-block btn-outline-info">Contact us</button>
+							</div>
+						</div>
+						<div class="card mb-4 box-shadow">
+							<div class="card-header">
+								<h2 class="my-0 font-weight-normal">À La Carte</h2>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title pricing-card-title"><small class="text-muted">Get a quote</small></h4>
+								<ul class="list-unstyled mt-3 mb-4 text-left">
+									<li class="text-center">Customization services tailor-made to fit perfectly with your business needs</li>
+									<br>
+									<li><i class="fa fa-check" aria-hidden="true"></i> All services provided in Strategy</li>
+									<li><i class="fa fa-check" aria-hidden="true"></i> All services provided in Creative</li>
+									<li><i class="fa fa-check" aria-hidden="true"></i> Comprehensive & in-depth consultancy</li>
+									<li><i class="fa fa-check" aria-hidden="true"></i> And beyond ...</li>
+								</ul>
+								<button type="button" class="btn btn-lg btn-block btn-outline-info ">Contact us</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section> 
 
+			<!-- page 5 -->
+			<section class="section" id="section-5">
+				<header><span1>Let's keep in touch</span1></header>
+				<form name="contact" id="form" action="thank-you" netlify>            
+					<input id="name" type="text" placeholder="name">
+					<input id="email" type="text" placeholder="e-mail">
+					<textarea id="message" type="text" placeholder="message"></textarea>
+					<input id="submit" type="submit" value="SEND">          
+				</form>
+			</section> 
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
