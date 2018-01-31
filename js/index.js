@@ -13,6 +13,7 @@ $(document).ready(function() {
     navigation: {
       textColor: "#ffffff",
       bulletsColor: "#ffffff",
+      // hoverColor: "#ffffff",
       position: "right",
       tooltips: [
         "Home",
